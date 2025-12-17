@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form</title>
+    <link rel="stylesheet" href="form.css">
+  </head>
+  <body>
+    <div class="container">
+      <!--Login Form-->
+      <div class="message" id="loginMessage"></div>
+      <form action="#" class="form-active tab" id="loginForm">
+        <h3>Login to your account</h3>
+        <div class="input-group">
+          <label for="loginEmail">Email Address</label>
+          <input type="email" id="loginEmail" placeholder="Enter your email address">
+          <div class="error" id="loginEmailError"></div>
+        </div>
+        <div class="input-group">
+          <label for="loginPassword">Password</label>
+          <input type="password" id="loginPassword" placeholder="Enter your password">
+          <div class="error" id="loginPasswordError"></div>
+        </div>
+        <button type="submit" class="btn" id="addbtn">Login</button>
+        <div class="alreadyAccount">
+          <p>If you don't have an account?</p>
+          <a id="showRegister" href="#">Create Account</a>
+        </div>
+      </form>
+      <!--Registration Form-->
+      <div class="message" id="registerMessage"></div>
+      <form action="#" class="form-hidden tab" id="registrationForm">
+        <h3>Create your account</h3>
+        <div class="input-group">
+          <label for="registerName">Name</label>
+          <input type="text" id="registerName" placeholder="Enter your email address">
+          <div class="error" id="registerNameError"></div>
+        </div>
+        <div class="input-group">
+          <label for="registerEmail">Email Address</label>
+          <input type="email" id="registerEmail" placeholder="Enter your email address">
+          <div class="error" id="registerEmailError"></div>
+        </div>
+        <div class="input-group">
+          <label for="registerPassword">Password</label>
+          <input type="password" id="registerPassword" placeholder="Enter your password">
+          <div class="error" id="registerPasswordError"></div>
+        </div>
+        <div class="input-group">
+          <label for="registerConfirmPassword">Confirm Password</label>
+          <input type="password" id="registerConfirmPassword" placeholder="Enter your password">
+          <div class="error" id="registerConfirmPasswordError"></div>
+        </div>
+        <button type="submit" class="btn">Create Account</button>
+        <div class="alreadyAccount">
+          <p>Already have an account?</p>
+          <a id="showLogin" href="#">Login</a>
+        </div>
+      </form>
+    </div>
+    <script src="form.js"></script>
+    <script src="validation.js"></script>
+    <script src="dashboard.js"></script>
+  </body>
+</html>
